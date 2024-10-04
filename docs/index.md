@@ -26,14 +26,32 @@ Feel free to explore and adapt the bookmarklets to your needs for even more prod
 ## Bookmarklets List
 
 ### Today 📅
+
 **Description**: This bookmarklet displays the current date and time in 24-hour format, along with the name of the week day and the current week number. It provides a quick overview of today's date details in an alert box.
 
 **Name**:
 ```
 Today 📅
 ```
+
 **Code**:
 ```js
 javascript:(function(){const now = new Date(); const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; const weekNumber = Math.ceil(((now - new Date(now.getFullYear(), 0, 1)) / 86400000 + new Date(now.getFullYear(), 0, 1).getDay() + 1) / 7); const dateTimeString = `Today is: ${days[now.getDay()]}, Week ${weekNumber}\nDate: ${now.toLocaleDateString('en-GB')} Time: ${now.getHours()}:${String(now.getMinutes()).padStart(2, '0')}`; alert(dateTimeString);})();
 ```
 
+### YT Speed Boost 🚀
+
+**Description**: This bookmarklet allows you to watch YT videos at an increased speed to 8x. Use it to fast-forward videos quickly and get through content more efficiently. You can modify the playbackRate with values from 0.1 to 15.9 and have different bookmarks for each value. Values equal or grater than 16x seem to have effect for a short time.
+<div style="text-align: center;">
+    <img src="../docs/resources/yt_speed.png" alt="YT Bookmarklet screenshot" style="border: 1px solid lightgray; padding: 10px;" />
+</div>
+
+**Name**:
+```
+YT 8x 🚀
+```
+
+**Code**:
+```js
+javascript:(function(){document.getElementsByTagName("video")[0].playbackRate = 8})();
+```
