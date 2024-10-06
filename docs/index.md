@@ -38,6 +38,7 @@ Today 📅
 ```js
 javascript:(function(){const now = new Date(); const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']; const weekNumber = Math.ceil(((now - new Date(now.getFullYear(), 0, 1)) / 86400000 + new Date(now.getFullYear(), 0, 1).getDay() + 1) / 7); const dateTimeString = `Today is: ${days[now.getDay()]}, Week ${weekNumber}\nDate: ${now.toLocaleDateString('en-GB')} Time: ${now.getHours()}:${String(now.getMinutes()).padStart(2, '0')}`; alert(dateTimeString);})();
 ```
+---
 
 ### YT Speed Boost 🚀
 
@@ -54,4 +55,24 @@ YT 8x 🚀
 **Code**:
 ```js
 javascript:(function(){document.getElementsByTagName("video")[0].playbackRate = 8})();
+```
+
+---
+
+### Do No Consent 🚫
+
+**Description**: This bookmarklet automatically unchecks all checkboxes typically used by data collection forms on websites, improving your privacy without the need of any browser extension that may prevent you from using the site.
+
+<div style="text-align: center; background-color: rgba(31, 31, 31, 0.5); padding: 10px;">
+    <img src="../docs/resources/do_not_consent.png" alt="Request your consent to use your personal data" style="border: 1px solid lightgray; padding: 5px;" />
+</div>
+
+**Name**
+```
+Do No Consent 🚫
+```
+
+**Code**:
+```js
+javascript:(function() { const uncheckCheckboxes = () => { const checkboxes = document.querySelectorAll('input[type="checkbox"]'); checkboxes.forEach(checkbox => { checkbox.checked = false; }); }; const manageOptionsButton = document.querySelector('button.fc-button.fc-cta-manage-options.fc-secondary-button'); if (manageOptionsButton) { manageOptionsButton.click(); setTimeout(() => { uncheckCheckboxes(); const nextButton = document.querySelector('button.fc-navigation-button.fc-manage-vendors'); if (nextButton) { nextButton.click(); setTimeout(() => { uncheckCheckboxes(); const confirmButton = document.querySelector('button.fc-button.fc-confirm-choices.fc-primary-button'); if (confirmButton) { confirmButton.click(); } }, 500); } }, 500); } })();
 ```

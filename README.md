@@ -49,7 +49,7 @@ First, make sure the bookmark bar is visible in your browser. It give a better u
 
 The following is how it looks like in Google Chrome. If you have questions how to add a new bookmark on Google Chrome or other browsers, click [here](./docs/howtos/bookmarks.md).
 <div style="text-align: center;">
-    <img src="./docs/resources/new_bookmark_chrome.png" alt="Google Chrome Logo" style="border: 1px solid lightgray; padding: 10px;" />
+    <img src="./docs/resources/new_bookmark_chrome.png" alt="Google     Chrome Logo" style="border: 1px solid lightgray; padding: 10px;" />
 </div>
 
 ## Available Bookmarklets
