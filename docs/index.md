@@ -76,3 +76,23 @@ Do No Consent 🚫
 ```js
 javascript:(function() { const uncheckCheckboxes = () => { const checkboxes = document.querySelectorAll('input[type="checkbox"]'); checkboxes.forEach(checkbox => { checkbox.checked = false; }); }; const manageOptionsButton = document.querySelector('button.fc-button.fc-cta-manage-options.fc-secondary-button'); if (manageOptionsButton) { manageOptionsButton.click(); setTimeout(() => { uncheckCheckboxes(); const nextButton = document.querySelector('button.fc-navigation-button.fc-manage-vendors'); if (nextButton) { nextButton.click(); setTimeout(() => { uncheckCheckboxes(); const confirmButton = document.querySelector('button.fc-button.fc-confirm-choices.fc-primary-button'); if (confirmButton) { confirmButton.click(); } }, 500); } }, 500); } })();
 ```
+
+---
+
+### Blur/Unblur Page Content 🌫️
+
+**Description**: This bookmarklet toggles the blur effect on a webpage. It applies a 3px blur when triggered, and removes the blur when triggered again, allowing you to obscure or reveal the content of the page.
+
+<div style="text-align: center; background-color: rgba(31, 31, 31, 0.5); padding: 10px;">
+    <img src="../docs/resources/blur.png" alt="Blur Page Content" style="border: 1px solid lightgray; padding: 5px;" />
+</div>
+
+**Name**
+```
+Blur/Unblur Page Content 🌫️
+```
+
+**Code**:
+```js
+javascript:(function(){let currentFilter=document.documentElement.style.filter;if(/^blur\((\d+(\.\d+)?)px\)$/.test(currentFilter)&&currentFilter==='blur(3px)'){document.documentElement.style.filter='';}else{document.documentElement.style.filter='blur(3px)';}})();
+```
