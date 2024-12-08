@@ -96,3 +96,23 @@ Blur/Unblur Page Content 🌫️
 ```js
 javascript:(function(){let currentFilter=document.documentElement.style.filter;if(/^blur\((\d+(\.\d+)?)px\)$/.test(currentFilter)&&currentFilter==='blur(3px)'){document.documentElement.style.filter='';}else{document.documentElement.style.filter='blur(3px)';}})();
 ```
+
+---
+
+### Delete LinkedIn Notifications 🗑️
+
+**Description**: This bookmarklet automatically deletes LinkedIn notification cards one by one. It finds the notifications that have not already been deleted and triggers the "Delete notification" action from the settings menu.
+
+<div style="text-align: center; background-color: rgba(31, 31, 31, 0.5); padding: 10px;">
+    <img src="../docs/resources/deleteLinkedInNotifications.gif" alt="Delete LinkedIn Notifications" style="border: 1px solid lightgray; padding: 5px;" />
+</div>
+
+**Name**
+```
+Delete LinkedIn Notifications 🗑️
+```
+
+**Code**:
+```js
+javascript:(function(){let lastDeletedItemIndex=-1;function deleteLinkedInNotifications(){function processNextCard(){const notificationCards=Array.from(document.querySelectorAll('div[data-finite-scroll-hotkey-item]'));const nextCard=notificationCards.find(card=>{const cardIndex=parseInt(card.getAttribute('data-finite-scroll-hotkey-item'),10);const cardText=card.textContent.includes('Notification deleted.');return cardIndex>lastDeletedItemIndex&&!cardText;});if(!nextCard){console.log("No more active notifications to delete.");return;}const cardIndex=parseInt(nextCard.getAttribute('data-finite-scroll-hotkey-item'),10);const settingsButton=nextCard.querySelector('button[aria-label="Settings menu"]');if(settingsButton){settingsButton.click();setTimeout(function(){const deleteTextElement=Array.from(document.querySelectorAll('.nt-card-settings-dropdown-item__headline')).find(el=>el.textContent.trim()==='Delete notification');if(deleteTextElement){const deleteButton=deleteTextElement.closest('button.nt-card-settings-dropdown-item__button');if(deleteButton){deleteButton.click();console.log(`Notification with index ${cardIndex} deleted.`);lastDeletedItemIndex=cardIndex;setTimeout(processNextCard,500);}else{console.error("Delete button not found.");}}else{console.error("'Delete notification' option not found.");}},300);}else{console.error("Settings button not found in the notification card.");}}processNextCard();}deleteLinkedInNotifications();})();
+```
