@@ -2,7 +2,7 @@
 Disclaimer:
 
 The author of this bookmarklet is not responsible for any implications resulting from its use.
-Users are advised to exercise caution and discretion while using this script. 
+Users are advised to exercise caution and discretion while using this script.
 If you have questions regarding the legality of using this bookmarklet or if it may potentially break any laws, 
 it is strongly recommended that you refrain from using it.
 

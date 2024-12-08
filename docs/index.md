@@ -16,8 +16,8 @@ To make things convenient both name and code are formatted for easy copying.
 First, make sure the bookmark bar is visible in your browser. It give a better user experience. Then follow the instructions bellow:
 
 1. Find the bookmarklet you want to add as bookmark.
-2. Copy the code, exactly as it is. 
-3. Open the a new bookmark panel. 
+2. Copy the code, exactly as it is.
+3. Open the a new bookmark panel.
 4. In the name field, enter the name bookmarklet
 5. Past the code in the URL field.
 

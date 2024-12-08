@@ -9,7 +9,7 @@ First, you need make sure the bookmark bar is visible in your browser. Here are 
 
 2. **Access the Menu**: Click on the three vertical dots (⋮) located in the top-right corner of the browser window.
 
-3. **Show Bookmarks Bar**: 
+3. **Show Bookmarks Bar**:
    - Hover over **Bookmarks** in the dropdown menu.
    - In the submenu, click on **Show bookmarks bar** to enable it. A checkmark will appear next to this option, indicating that the bookmarks bar is now visible.
 
@@ -21,9 +21,9 @@ First, you need make sure the bookmark bar is visible in your browser. Here are 
 
 2. **Access the Menu**: Click on the three horizontal lines (☰) in the top-right corner of the browser window.
 
-3. **Show Bookmarks Toolbar**: 
+3. **Show Bookmarks Toolbar**:
    - Click on **Bookmarks** in the dropdown menu.
-   - Then select **Bookmarks Toolbar** and click on **Always Show**. 
+   - Then select **Bookmarks Toolbar** and click on **Always Show**.
 
 4. **Alternative Method**: You can also toggle the bookmarks toolbar by right-clicking on an empty space in the toolbar area, then clicking on **Bookmarks Toolbar** and selecting **Always Show**.
 
@@ -35,7 +35,7 @@ First, you need make sure the bookmark bar is visible in your browser. Here are 
 
 2. **Access the Menu**: Click on the three horizontal dots (⋮) in the top-right corner of the browser window.
 
-3. **Show Favorites Bar**: 
+3. **Show Favorites Bar**:
    - Hover over **Favorites** in the dropdown menu.
    - Click on **Show favorites bar** and choose **Always** from the submenu.
 
@@ -57,7 +57,7 @@ Here are step-by-step instructions for adding a new bookmark in Google Chrome, F
 3. **Open the Bookmark Manager**:
    - Right-click on an empty space in the bookmarks bar.
    - Select **Add new bookmark** from the context menu.
-  
+
    Alternatively:
    - Click the three vertical dots (⋮) in the top-right corner.
    - Go to **Bookmarks** > **Bookmark manager** (or press `Ctrl + Shift + O`).
@@ -86,7 +86,7 @@ Here are step-by-step instructions for adding a new bookmark in Google Chrome, F
 3. **Open the Bookmark Manager**:
    - Right-click on an empty space in the bookmarks toolbar.
    - Select **New Bookmark** from the context menu.
-   
+
    Alternatively:
    - Click on the three horizontal lines (☰) in the top-right corner.
    - Go to **Library** > **Bookmarks** > **Show All Bookmarks** (or press `Ctrl + Shift + B`).
@@ -98,7 +98,7 @@ Here are step-by-step instructions for adding a new bookmark in Google Chrome, F
 
 <div style="text-align: center;">
     <img src="../resources/new_bookmark_firefox.png" alt="Google Chrome Logo" style="border: 1px solid lightgray; padding: 10px;" />
-</div>   
+</div>
 
 5. **Save the Bookmark**: Click the **Save** button to save the bookmark.
 
@@ -116,7 +116,7 @@ Here are step-by-step instructions for adding a new bookmark in Google Chrome, F
    - Type the following address in the address bar:
    ```edge://favorites/?id=1```
    - Select **Add new favorite** from the context menu.
-   
+
    Alternatively:
    - Click on the three horizontal dots (⋮) in the top-right corner.
    - Go to **Favorites** > **Manage favorites** (or press `Ctrl + Shift + O`).
@@ -124,7 +124,7 @@ Here are step-by-step instructions for adding a new bookmark in Google Chrome, F
 
 <div style="text-align: center;">
     <img src="../resources/new_bookmark_edge_1.png" alt="Google Chrome Logo" style="border: 1px solid lightgray; padding: 10px;" />
-</div>      
+</div>
 
 4. **Enter Bookmark Details**:
    - **Name**: In the **Name** field, enter bookmarklet name (this is how it will appear on the bookmarks bar).
@@ -132,13 +132,13 @@ Here are step-by-step instructions for adding a new bookmark in Google Chrome, F
 
 <div style="text-align: center;">
     <img src="../resources/new_bookmark_edge_2.png" alt="Google Chrome Logo" style="border: 1px solid lightgray; padding: 10px;" />
-</div>       
+</div>
 
 5. **Save the Bookmark**: Click the **Save** button to add the bookmark to your favorites bar.
 
 <div style="text-align: center;">
     <img src="../resources/bookmark_bar_edge.png" alt="Google Chrome Logo" style="border: 1px solid lightgray; padding: 10px;" />
-</div> 
+</div>
 
 ### Summary
 
