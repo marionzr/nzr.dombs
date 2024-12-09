@@ -79,7 +79,7 @@ javascript:(function() { const uncheckCheckboxes = () => { const checkboxes = do
 
 ---
 
-### Blur/Unblur Page Content 🌫️
+### Blur 🌫️
 
 **Description**: This bookmarklet toggles the blur effect on a webpage. It applies a 3px blur when triggered, and removes the blur when triggered again, allowing you to obscure or reveal the content of the page.
 
@@ -89,7 +89,7 @@ javascript:(function() { const uncheckCheckboxes = () => { const checkboxes = do
 
 **Name**
 ```
-Blur/Unblur Page Content 🌫️
+Blur 🌫️
 ```
 
 **Code**:
@@ -140,4 +140,24 @@ javascript:(function(){let div=document.getElementById('custom404Div');if(div){d
 **Code (Dark Mode)**:
 ```js
 javascript:(function(){let div=document.getElementById('custom404Div');if(div){div.remove();}else{div=document.createElement('div');div.id='custom404Div';div.style='position:fixed;top:0;left:0;width:100%;height:100%;background:#121212;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;font-family:Arial,sans-serif;color:#f1f1f1;text-align:center;';div.innerHTML='<h1 style="font-size:120px;font-weight:bold;margin:0 0 20px;color:#f1f1f1;">404</h1><p style="font-size:24px;margin:0 0 10px;color:#f1f1f1;">Page Not Found</p><p style="font-size:16px;color:#bdbdbd;max-width:600px;margin:5px 0;">We can’t seem to find the page you’re looking for.<br>Please return to the previous page or visit our homepage for more information.</p>';document.body.appendChild(div);}})();
+```
+
+---
+
+### Toggle Grayscale Mode 🩶
+
+**Description**: This bookmarklet toggles grayscale mode on the current webpage. It can be used to test accessibility or to simulate a grayscale display.
+
+<div style="text-align: center; background-color: rgba(31, 31, 31, 0.5); padding: 10px;">
+    <img src="../docs/resources/grayscale.jpg" alt="Blur Page Content" style="border: 1px solid lightgray; padding: 5px;" />
+</div>
+
+**Name**:
+```
+Grayscale Mode 🩶
+```
+
+**Code**:
+```js
+javascript:(function(){if(document.documentElement.style.filter==="grayscale(100%)"){document.documentElement.style.filter="";}else{document.documentElement.style.filter="grayscale(100%)";}})();
 ```
